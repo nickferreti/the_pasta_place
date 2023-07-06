@@ -7,6 +7,11 @@ export default function Cardapio() {
             <nav className={style.menu}>
                 <img src={logo} alt='logo TPP'></img>
             </nav>
+            <header className={style.header}>
+                <div className={style.header__text}>
+                    A maior casa de massas
+                </div>
+            </header>
         </main>
     );
 }
