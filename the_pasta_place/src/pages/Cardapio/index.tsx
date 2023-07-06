@@ -1,5 +1,5 @@
 import style from './Cardapio.module.scss'
-import logo from '../../assets/logo.png'
+import logo from 'assets/logo.png'
 
 export default function Cardapio() {
     return (
