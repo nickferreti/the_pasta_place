@@ -11,6 +11,7 @@ export default function Buscador({busca, setBusca}: Props) {
     return (
         <div className={style.buscador}>
             <input 
+            placeholder="O que você deseja?"
             value={busca}
             onChange={evento => setBusca(evento.target.value)}/>
             <CgSearch
