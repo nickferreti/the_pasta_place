@@ -4,6 +4,7 @@ import Buscador from './buscador';
 import { useState } from 'react';
 import Filtro from './filtros';
 import Ordenador from './Ordenador';
+import Itens from './itens';
 
 
 
@@ -32,6 +33,7 @@ export default function Cardapio() {
                     <Filtro filtro={filtro} setFiltro={setFiltro} />
                     <Ordenador ordenador={ordenador} setOrdenador={setOrdenador} />
                 </div>
+                <Itens/>
             </section>
         </main>
     );
