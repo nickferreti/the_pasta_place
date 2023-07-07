@@ -19,7 +19,7 @@ export default function Ordenador({
     <button
       className={classNames({
         [styles.ordenador]: true,
-        [styles["ordenador--ativo"]]: ordenador !== "
+        [styles["ordenador--ativo"]]: ordenador !== ""
       })}
       onClick={() => setAberto(!aberto)}
       onBlur={() => setAberto(false)}
