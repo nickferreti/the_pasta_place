@@ -1,11 +1,11 @@
-import logo from 'assets/logo.png'
 import style from './item.module.scss'
 import cardapio from '../itens.json'
+import classnames from 'classnames'
 
 type Props = typeof cardapio[0]
 
 export default function Item(props: Props) {
-    const {... Props } = props;
+    const {category, ... Props } = props;
     return (
         <div className={style.item}>
             <div className={style.item__imagem}>
@@ -21,17 +21,20 @@ export default function Item(props: Props) {
                     </p>
                 </div>
                 <div className={style.item__tags}>
-                    <div className={style.item__tipo}>
-                        {Props.category.label}
+                    <div className={classnames({
+                        [style.item__tipo]:true,
+                        [style[`item__tipo__${category.label.toLowerCase()}`]]: true
+                    })}>
+                        {category.label}
                     </div>
                     <div className={style.item__porcao}>
                         {Props.size}
                     </div>
                     <div className={style.item__qtdpessoas}>
-                        Serve até {Props.serving} Pessoas
+                        Serve {Props.serving} Pessoa{Props.serving === 1 ? "" : "s"}
                     </div>
                     <div className={style.item__valor}>
-                        R${Props.price}
+                        R$ {Props.price.toFixed(2)}
                     </div>
                 </div>
             </div>
