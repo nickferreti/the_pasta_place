@@ -5,8 +5,10 @@ import { useState } from 'react';
 import Filtro from './filtros';
 
 
+
 export default function Cardapio() {
     const [busca, setBusca] = useState("")
+    const [filtro, setFiltro] = useState<number | null>(null)
     return (
         <main>
             <nav className={style.menu}>
@@ -24,7 +26,9 @@ export default function Cardapio() {
                 <Buscador
                 busca={busca}
                 setBusca={setBusca}/>
-                <Filtro/>
+                <Filtro
+                filtro={filtro}
+                setFiltro={setFiltro}/>
             </section>
         </main>
     );
