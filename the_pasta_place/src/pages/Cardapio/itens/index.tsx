@@ -21,7 +21,7 @@ export default function Itens(props: Props) {
     } 
 
     function testaFiltro(id: number) {
-        if(filtro !== null) return filtro === i
+        if(filtro !== null) return filtro === id
         return true
     }
 
