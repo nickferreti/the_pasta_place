@@ -28,7 +28,7 @@ export default function Item(props: Props) {
                         {category.label}
                     </div>
                     <div className={style.item__porcao}>
-                        {Props.size}
+                        {Props.size}g
                     </div>
                     <div className={style.item__qtdpessoas}>
                         Serve {Props.serving} Pessoa{Props.serving === 1 ? "" : "s"}
