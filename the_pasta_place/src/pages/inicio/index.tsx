@@ -24,13 +24,12 @@ export default function Inicio() {
                             src={item.photo} 
                             alt={item.title}/>
                         </div>
-                        <button>
+                        
                             <button 
                             className={style.recomendado__botao}
                             >
                                 Ver mais
-                            </button
-                        </button>
+                            </button>
                     </div>
                 ))}
             </div>
