@@ -18,7 +18,7 @@ export default function Inicio() {
                     className={style.recomendado}
                     >
                         <div 
-                        className={style.recomendado__imagem}
+                        className={style.recomendado__imagem
                         >
                             <img 
                             src={item.photo} 
