@@ -29,7 +29,7 @@ export default function Inicio() {
                             className={style.recomendado__botao}
                             >
                                 Ver mais
-                            </button>
+                            </button
                         </button>
                     </div>
                 ))}
