@@ -1,11 +1,13 @@
 import Cardapio from 'data/cardapio.json'
 import style from './inicio.module.scss'
+import Menu from 'components/menu'
 
 export default function Inicio() {
     let pratosRecomendados = [...Cardapio]
     pratosRecomendados = pratosRecomendados.sort(() => 0.5 - Math.random()).splice(0, 3)
     return (
         <section>
+            <Menu/>
             <h3 
             className={style.titulo}
             >

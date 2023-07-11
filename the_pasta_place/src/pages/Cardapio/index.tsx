@@ -1,10 +1,10 @@
 import style from './Cardapio.module.scss'
-import logo from 'assets/logo.png'
 import Buscador from './buscador';
 import { useState } from 'react';
 import Filtro from './filtros';
 import Ordenador from './Ordenador';
 import Itens from './itens';
+import Menu from 'components/menu';
 
 
 
@@ -14,9 +14,7 @@ export default function Cardapio() {
     const [ordenador, setOrdenador] = useState("");
     return (
         <main>
-            <nav className={style.menu}>
-                <img src={logo} alt='logo TPP'></img>
-            </nav>
+            <Menu/>
             <header className={style.header}>
                 <div className={style.header__text}>
                     A maior casa de massas
