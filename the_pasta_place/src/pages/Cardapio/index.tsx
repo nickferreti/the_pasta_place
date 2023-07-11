@@ -4,7 +4,6 @@ import { useState } from 'react';
 import Filtro from './filtros';
 import Ordenador from './Ordenador';
 import Itens from './itens';
-import Menu from 'components/menu';
 
 
 
@@ -14,7 +13,6 @@ export default function Cardapio() {
     const [ordenador, setOrdenador] = useState("");
     return (
         <main>
-            <Menu/>
             <header className={style.header}>
                 <div className={style.header__text}>
                     A maior casa de massas
