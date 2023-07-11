@@ -11,13 +11,7 @@ export default function Cardapio() {
     const [busca, setBusca] = useState("")
     const [filtro, setFiltro] = useState<number | null>(null)
     const [ordenador, setOrdenador] = useState("");
-    return (
-        <main>
-            <header className={style.header}>
-                <div className={style.header__text}>
-                    A maior casa de massas
-                </div>
-            </header>
+    return ( 
             <section className={style.cardapio}>
                 <h3 className={style.cardapio__titulo}>
                     Cardapio
@@ -35,6 +29,5 @@ export default function Cardapio() {
                 ordenador={ordenador}
                 />
             </section>
-        </main>
     );
 }
