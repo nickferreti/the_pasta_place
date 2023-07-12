@@ -4,20 +4,20 @@ import { Link } from 'react-router-dom'
 
 export default function Menu() {
     const rotas = [
-    {
-        label: 'Início',
-        to: '/'
-    },
-    {
-        label: 'Cardápio',
-        to: '/Cardapio'
-    },
-    {
-        label: 'Sobre',
-        to: '/Sobre'
-    }
-]
-    return(
+        {
+            label: 'Início',
+            to: '/'
+        },
+        {
+            label: 'Cardápio',
+            to: '/Cardapio'
+        },
+        {
+            label: 'Sobre',
+            to: '/Sobre'
+        }
+    ]
+    return (
         <nav className={style.menu}>
             <img src={logo} alt='logo TPP'></img>
             <ul className={style.menu__list}>

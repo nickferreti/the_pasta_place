@@ -5,11 +5,11 @@ import classnames from 'classnames'
 type Props = typeof cardapio[0]
 
 export default function Item(props: Props) {
-    const {category, ... Props } = props;
+    const { category, ...Props } = props;
     return (
         <div className={style.item}>
             <div className={style.item__imagem}>
-                <img src={Props.photo} alt={Props.title}/>
+                <img src={Props.photo} alt={Props.title} />
             </div>
             <div className={style.item__descricao}>
                 <div className={style.item__titulo}>
@@ -22,7 +22,7 @@ export default function Item(props: Props) {
                 </div>
                 <div className={style.item__tags}>
                     <div className={classnames({
-                        [style.item__tipo]:true,
+                        [style.item__tipo]: true,
                         [style[`item__tipo__${category.label.toLowerCase()}`]]: true
                     })}>
                         {category.label}

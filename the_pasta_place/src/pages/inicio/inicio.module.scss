@@ -1,9 +1,11 @@
 @import 'styles/variaveis';
+
 .titulo {
   color: $dark;
   font-size: 3rem;
   margin-bottom: 30px;
 }
+
 .recomendados {
   border-radius: 2px;
   display: flex;
@@ -11,15 +13,18 @@
   gap: 30px;
   justify-content: space-between;
 }
+
 .recomendado {
   &__imagem {
     width: 300px;
     margin-bottom: 10px;
+
     img {
       border-radius: 8px;
       width: 100%;
     }
   }
+
   &__botao {
     background-color: $red;
     border: none;
@@ -31,19 +36,23 @@
     padding: 10px 0;
     transition: .2s ease;
     width: 100%;
+
     &:hover {
       background-color: $red-dark;
     }
   }
 }
+
 .nossaCasa {
   margin-bottom: 100px;
   position: relative;
   width: 100%;
+
   img {
     border-radius: 5px;
     width: 100%;
   }
+
   &__endereco {
     align-items: center;
     background-color: $dark;

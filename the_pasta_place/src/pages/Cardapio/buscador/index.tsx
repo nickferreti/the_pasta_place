@@ -7,16 +7,16 @@ interface Props {
     setBusca: React.Dispatch<React.SetStateAction<string>>;
 }
 
-export default function Buscador({busca, setBusca}: Props) {
+export default function Buscador({ busca, setBusca }: Props) {
     return (
         <div className={style.buscador}>
-            <input 
-            placeholder="O que você deseja?"
-            value={busca}
-            onChange={evento => setBusca(evento.target.value)}/>
+            <input
+                placeholder="O que você deseja?"
+                value={busca}
+                onChange={evento => setBusca(evento.target.value)} />
             <CgSearch
-            size={20}
-            color="#4c4d5e"
+                size={20}
+                color="#4c4d5e"
             />
         </div>
     )
