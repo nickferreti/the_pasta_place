@@ -1,5 +1,6 @@
 import Cardapio from 'data/cardapio.json'
 import style from './inicio.module.scss'
+import styleTema from 'styles/tema.module.scss'
 
 
 export default function Inicio() {
@@ -8,7 +9,7 @@ export default function Inicio() {
     return (
         <section>
             <h3
-                className={style.titulo}
+                className={styleTema.titulo}
             >
                 Recomendações da cozinha
             </h3>

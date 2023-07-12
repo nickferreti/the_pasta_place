@@ -1,4 +1,5 @@
 import style from './Cardapio.module.scss'
+import styleTema from 'styles/tema.module.scss'
 import Buscador from './buscador';
 import { useState } from 'react';
 import Filtro from './filtros';
@@ -13,7 +14,7 @@ export default function Cardapio() {
     const [ordenador, setOrdenador] = useState("");
     return (
         <section className={style.cardapio}>
-            <h3 className={style.cardapio__titulo}>
+            <h3 className={styleTema.titulo}>
                 Cardapio
             </h3>
             <Buscador
