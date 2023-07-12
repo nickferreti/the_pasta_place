@@ -1,6 +1,7 @@
 import Cardapio from 'data/cardapio.json'
 import style from './inicio.module.scss'
 import styleTema from 'styles/tema.module.scss'
+import nossa_casa from 'assets/nossa_casa.png'
 
 
 export default function Inicio() {
@@ -34,6 +35,15 @@ export default function Inicio() {
                         </button>
                     </div>
                 ))}
+            </div>
+            <h3 className={styleTema.titulo}>
+                Nossa Casa
+            </h3>
+            <div className={style.nossaCasa}>
+                <img src={nossa_casa} alt='The pasta place'/>
+                <div className={style.nossaCasa__endereco}>
+                    Av. Pres Kennedy, 428 <br/> <br/> São José - SC
+                </div>
             </div>
         </section>
     )
