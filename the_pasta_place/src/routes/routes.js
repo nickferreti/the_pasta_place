@@ -30,17 +30,17 @@ export default function AppRouter() {
                             path='sobre'
                             element={<Sobre />}
                         />
-                        <Route
-                            path='pratos/:id'
-                            element={<Prato />}
-                        />
                     </Route>
                     <Route
-                            path='*'
-                            element={<NotFound />}
-                        />
+                        path='*'
+                        element={<NotFound />}
+                    />
+                    <Route
+                        path='pratos/:id'
+                        element={<Prato />}
+                    />
                 </Routes>
-                <Footer/>
+                <Footer />
             </Router>
         </main>
     )

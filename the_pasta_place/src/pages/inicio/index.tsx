@@ -10,9 +10,10 @@ export default function Inicio() {
     pratosRecomendados = pratosRecomendados.sort(() => 0.5 - Math.random()).splice(0, 3)
 
     const navigate = useNavigate()
-    function redirecionarDetalhes(Prato: typeof Cardapio[0]) {
-        navigate(`/prato/${Prato.id}`, {state: {...Prato}, replace: true})
-    }   
+
+    function redirecionaDetalhes(Prato: typeof Cardapio[0]) {
+        navigate(`/prato/${Prato.id}`, { state: {...Prato}});
+    }
     return (
         <section>
             <h3
@@ -35,7 +36,7 @@ export default function Inicio() {
                         </div>
 
                         <button
-                            onClick={() => redirecionarDetalhes(item)}
+                            onClick={() => redirecionaDetalhes(item)}
                             className={style.recomendado__botao}
                         >
                             Ver mais

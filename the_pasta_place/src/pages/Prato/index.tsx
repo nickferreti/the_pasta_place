@@ -1,5 +1,5 @@
 import style from './prato.module.scss'
-import { useLocation } from 'react-router-dom'
+
 
 export default function Prato() {
     return(
