@@ -9,39 +9,21 @@ import NotFound from 'pages/notFound'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 export default function AppRouter() {
-    let pratos = [...Cardapio]
-    return (
-        <main className='container'>
-            <Router>
-                <Menu />
-                <Routes>
-                    <Route
-                        path='/'
-                        element={<PagPadrao />}>
-                        <Route
-                            index
-                            element={<Inicio />}
-                        />
-                        <Route
-                            path='Cardapio'
-                            element={<Cardapio />}
-                        />
-                        <Route
-                            path='sobre'
-                            element={<Sobre />}
-                        />
-                    </Route>
-                    <Route
-                        path='*'
-                        element={<NotFound />}
-                    />
-                    <Route
-                        path='pratos/:id'
-                        element={<Prato />}
-                    />
-                </Routes>
-                <Footer />
-            </Router>
-        </main>
-    )
+  return (
+    <main className='container'>
+      <Router>
+        <Menu />
+        <Routes>
+          <Route path='/' element={<PagPadrao />} >
+            <Route index element={<Inicio />} />
+            <Route path='cardapio' element={<Cardapio />} />
+            <Route path='sobre' element={<Sobre />} />
+          </Route>
+          <Route path='prato/:id' element={<Prato />} />
+          <Route path='*' element={<NotFound />} />
+        </Routes>
+        <Footer />
+      </Router>
+    </main>
+  );
 }
